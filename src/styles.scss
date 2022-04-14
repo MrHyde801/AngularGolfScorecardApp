@@ -3,9 +3,14 @@
 
 
 @include mat.core();
+$lightgy: #FAFFD8;
+$golfgreen: #057A4B;
+$golfblue: #0477C4;
+$oxfordblue: #001B2E;
 
-$angular-golf-scorecard-primary: mat.define-palette(mat.$indigo-palette);
-$angular-golf-scorecard-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$angular-golf-scorecard-primary: mat.define-palette(mat.$teal-palette, 800);
+$angular-golf-scorecard-accent: mat.define-palette(mat.$blue-palette, A200, A100, A400);
 $angular-golf-scorecard-warn: mat.define-palette(mat.$red-palette);
 
 $angular-golf-scorecard-theme: mat.define-light-theme((
@@ -22,4 +27,8 @@ $angular-golf-scorecard-theme: mat.define-light-theme((
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  background-color: $lightgy;
+}
