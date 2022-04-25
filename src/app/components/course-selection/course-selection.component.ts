@@ -25,11 +25,14 @@ export class CourseSelectionComponent implements OnInit {
     })
 
   }
-  getCourse(id: string){
-    this.coursesService.getCourse(id).subscribe(course => {
-      this.courseInfo = course;
+  getCourse(){
+    this.coursesService.getCourse(this.courseNameFC.value).subscribe(course => {
+      this.courseInfo = course
       console.log(course)
     })
   }
+
   
+
+
 }
