@@ -1,0 +1,40 @@
+
+.score-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    table {
+        width: 90%;
+        font-weight: bold;
+        border-color: black;
+        .mat-header-row {
+            background-color: #057A4B;
+            .mat-header-cell {
+                color: white;
+                border: black solid 1px;
+                padding-left: 10px;
+            }
+        }
+        tr.mat-row:nth-child(1) {
+            background-color: #0477C4;
+            .mat-cell {
+                color: white;
+            }
+        }
+        tr.mat-row:nth-child(2) {
+            background-color: #057A4B;
+            .mat-cell {
+                color: white;
+            }
+        }
+        tr.mat-row:nth-child(3) {
+            background-color: #dadfea;
+        }
+      }
+      .mat-cell{
+          border:black solid 1px;
+          padding-left: 10px;
+      }
+}

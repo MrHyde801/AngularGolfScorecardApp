@@ -20,16 +20,10 @@ export class CoursesService {
     )
   }
 
-  getCourse(id: string): Observable<Courses> {
+  getCourseById(id: string): Observable<Courses> {
     return this.http.get<Courses>(`https://golf-courses-api.herokuapp.com/courses/${id}`).pipe(
     )
   }
 
 }
 
-// getCourse(id: string) {
-//   this.coursesService.getCourse(id).subscribe(course => {
-//     this.courseInfo = course;
-//     console.log(course)
-//   })
-// }

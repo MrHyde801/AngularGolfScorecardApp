@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CoursesService } from 'src/app/services/courses.service';
 import { Courses } from 'src/app/interfaces/courses';
 import { FormControl} from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -16,6 +17,7 @@ export class CourseSelectionComponent implements OnInit {
 
   constructor(
     private coursesService: CoursesService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -25,9 +27,10 @@ export class CourseSelectionComponent implements OnInit {
     })
 
   }
-  getCourse(){
-    this.coursesService.getCourse(this.courseNameFC.value).subscribe(course => {
+  getCourse(courseId: string){
+    this.coursesService.getCourseById(courseId).subscribe(course => {
       this.courseInfo = course
+      this.router.navigate(['./score-card', {id: courseId}])
       console.log(course)
     })
   }

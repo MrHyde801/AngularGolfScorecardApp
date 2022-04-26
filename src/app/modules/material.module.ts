@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
+import { MatTableModule} from '@angular/material/table';
 
 
 
@@ -15,7 +16,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
 
   ],
   exports: [
@@ -23,8 +25,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatSelectModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule
-    
+    MatButtonModule,
+    MatTableModule
   ]
 })
 export class MaterialModule { }

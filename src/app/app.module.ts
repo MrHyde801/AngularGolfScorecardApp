@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material.module';
 
-import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { CourseSelectionComponent } from './components/course-selection/course-selection.component';
 import { TeeBoxSelectionComponent } from './components/tee-box-selection/tee-box-selection.component';
 import { SavedGamesComponent } from './components/saved-games/saved-games.component';
@@ -16,7 +15,6 @@ import { ScoreCardComponent } from './components/score-card/score-card.component
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent,
     CourseSelectionComponent,
     TeeBoxSelectionComponent,
     SavedGamesComponent,
