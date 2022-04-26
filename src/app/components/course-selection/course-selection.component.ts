@@ -34,8 +34,4 @@ export class CourseSelectionComponent implements OnInit {
       console.log(course)
     })
   }
-
-  
-
-
 }
